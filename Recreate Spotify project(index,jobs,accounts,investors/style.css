@@ -1,0 +1,1394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+/* index css starts here */
+.main {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+}
+.sidebar {
+  min-width: 15%;
+  background-color: black;
+  min-height: 100%;
+  overflow: hidden;
+  color: white;
+  padding-left: 20px;
+}
+.sidespanone {
+  color: white;
+}
+
+.material-symbols-outlined {
+  font-size: 28px;
+}
+.oo {
+  font-size: medium;
+}
+
+.sidebar img {
+  margin-top: 24px;
+  width: 130px;
+}
+.top,
+.down {
+  margin-top: 30px;
+}
+.iconwithspan {
+  display: flex;
+  margin: 15px 0;
+  color: #8e8888;
+  align-items: center;
+}
+.leftspan {
+  padding-left: 13px;
+}
+.leftspan:hover {
+  color: white;
+}
+.mainpart {
+  min-width: 85%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #202020;
+  color: white;
+}
+.mainnav {
+  display: flex;
+  color: white;
+  background-color: #3d3d3d;
+  transition: 0.3s background-color;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+.upgrade,
+.lima {
+  border-radius: 30px;
+  border: none;
+  height: 35px;
+  width: 95px;
+  background-color: black;
+  color: white;
+  margin-right: 30px;
+}
+
+.lima,
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.upgrade {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  height: 33px;
+  width: 90px;
+  background-color: #282828;
+  margin-right: 40px;
+}
+.upgrade:hover {
+  transform: scale(1.06);
+  background-color: black;
+  border: 1px solid white;
+}
+.lima:hover {
+  background-color: #282828;
+}
+.right {
+  margin-left: 30px;
+  display: flex;
+}
+.right span {
+  padding-left: 10px;
+  margin-left: 10px;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+
+  background-color: black;
+  border-radius: 50%;
+}
+.lima {
+  position: relative;
+}
+.limadrop {
+  position: absolute;
+
+  width: 199px;
+  height: 330px;
+  left: -100px;
+  top: 40px;
+  display: none;
+  background-color: #282828;
+  flex-direction: column;
+  text-align: left;
+}
+.acct {
+  display: flex;
+  padding: 5px 10px;
+  margin-top: 9px;
+  justify-content: space-between;
+}
+.limadrop a,
+.limadrop:hover a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.acct span {
+  font-weight: 100;
+}
+.acct:hover {
+  background-color: #3d3d3d;
+}
+.lima:focus-within .limadrop {
+  display: flex;
+}
+.see {
+  margin-right: 50px;
+}
+.see:hover,
+.h44:hover,
+.ar:hover {
+  text-decoration: underline;
+}
+.allsong {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  align-items: flex-start;
+}
+.song {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(40, 40, 40, 0.3);
+  width: 175px;
+  height: 270px;
+  border-radius: 5px;
+  position: relative;
+  margin-left: 32px;
+}
+.song:hover {
+  background-color: #282828;
+}
+.song img {
+  max-width: 150px;
+  height: 140px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.playsong {
+  position: absolute;
+  width: 48px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  height: 48px;
+  color: black;
+  bottom: 110px;
+  right: 25px;
+  animation-name: grow;
+  animation-iteration-count: 1;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  border-radius: 50%;
+  background-color: rgba(31, 223, 100, 0.9);
+}
+.playsong:hover {
+  transform: scale(1.06);
+  background-color: #1fdf64;
+}
+.song:hover .playsong {
+  display: flex;
+}
+.h44 {
+  margin: 20px 0 10px 32px;
+}
+.ar {
+  font-size: smaller;
+  color: #b9b5b5;
+}
+.allfooter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.footerone {
+  display: flex;
+  align-items: baseline;
+  margin: 80px 0 20px 32px;
+}
+.fone,
+.ftwo,
+.fthree {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+.ftwo {
+  margin-left: 110px;
+}
+.fthree {
+  margin-left: 90px;
+}
+.footerone a {
+  text-decoration: none;
+  margin-top: 10px;
+  color: #8e8888;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.endline {
+  width: 95%;
+  height: 1px;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: rgba(84, 83, 83, 0.2);
+}
+.endf {
+  margin-bottom: 150px;
+  margin-left: 22px;
+}
+.endf a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #8e8888;
+}
+.musicplay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  border-top: 1px solid rgba(84, 83, 83, 0.3);
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+}
+.musicup {
+  display: flex;
+}
+.musicup i {
+  margin: 0 10px;
+  font-size: 20px;
+  color: rgba(170, 165, 165, 0.5);
+}
+.musicdown {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.vline {
+  width: 500px;
+  height: 3px;
+  background-color: rgba(170, 165, 165, 0.5);
+  border-radius: 4px;
+}
+@keyframes grow {
+  from {
+    bottom: 100px;
+  }
+  to {
+    bottom: 110px;
+  }
+}
+/* index css ends here */
+
+/* account css starts here */
+.body {
+  background-color: #1c283a;
+  color: white;
+  font-size: 18px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+.nav img {
+  width: 130px;
+  height: 40px;
+  margin-left: 190px;
+}
+.rightnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 220px;
+}
+.rightnav span {
+  font-weight: 700;
+  margin: 0 20px;
+}
+.sline {
+  width: 1px;
+  height: 17px;
+  margin-right: 20px;
+  background-color: white;
+}
+.dropacct {
+  background: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightnav span:hover,
+.dropacct:hover {
+  color: #1fdf64;
+}
+.sectone {
+  display: flex;
+  width: 77%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(43, 59, 93, 1) 0%,
+    rgba(45, 51, 91, 1) 6%,
+    rgba(34, 33, 35, 1) 56%
+  );
+  height: 410px;
+}
+.sectone img {
+  width: 300px;
+  height: 360px;
+  margin: 50px 60px 0 10px;
+}
+.music {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  color: white;
+}
+.music h2 {
+  font-size: 72px;
+  word-spacing: 0px;
+  letter-spacing: -3.6px;
+  font-weight: 700;
+  margin: 24px 0px 12px;
+}
+.music p {
+  font-size: 17px;
+}
+.getp {
+  width: 150px;
+  height: 48px;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  background-color: #1fdf64;
+}
+.getp:hover {
+  transform: scale(1.05);
+}
+/* ACCOUNT SECTION TWO STARTS HERE */
+.secttwo {
+  display: flex;
+  width: 77%;
+  margin: auto;
+  height: 160vh;
+}
+.secttwoleft {
+  width: 25%;
+  height: 100%;
+  background-color: #1c1c1c;
+}
+.secttwouser {
+  display: flex;
+  height: 130px;
+  align-items: center;
+  justify-content: center;
+}
+.secttwolefteach {
+  display: flex;
+  margin-left: 20px;
+  border-bottom: 1px solid rgba(83, 82, 82, 0.3);
+  border-top: 1px solid rgba(83, 82, 82, 0.3);
+  border-left: 6px solid #1c1c1c;
+  justify-content: first baseline;
+}
+
+.secttwolefteach:hover {
+  border-left: 6px solid #1fdf64;
+}
+.secttwolefteach span {
+  margin: 15px 10px;
+  font-size: 16px;
+  color: rgb(169, 165, 165);
+}
+
+.secttwouser span {
+  font-size: 70px;
+  text-align: center;
+  padding: 10px 0;
+}
+.onewhite {
+  border-left: 6px solid #1fdf64;
+}
+.onewhite span {
+  color: white;
+}
+.secttworight {
+  max-width: 77%;
+  height: 100%;
+  color: black;
+  background-color: white;
+}
+
+.secttworight h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 35px 0 20px 50px;
+}
+.secttworight h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 50px;
+}
+table {
+  margin: 40px 0 0 50px;
+  height: 180px;
+  max-width: 800px;
+  text-align: start;
+}
+.righttd {
+  padding: 0 0 0 300px;
+  border-bottom: 1px solid rgb(201, 197, 197);
+}
+.lefttd {
+  border-bottom: 1px solid rgb(205, 202, 202);
+}
+
+.edit {
+  width: 150px;
+  height: 49px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0 50px 50px;
+  background-color: white;
+  border: 1px solid rgb(128, 128, 128, 0.7);
+  border-radius: 30px;
+}
+.edit:hover {
+  transform: scale(1.04);
+  border: 1px solid black;
+}
+.spotify {
+  height: 430px;
+  max-width: 790px;
+  margin: auto;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 20px;
+  box-shadow: 0 0 8px #b3b3b3;
+  border-radius: 10px;
+  border: 1px solid #b3b3b3;
+}
+.free {
+  width: 100%;
+
+  height: 53%;
+  display: flex;
+  align-items: center;
+  background-color: #b3b3b3;
+}
+.free h2 {
+  font-weight: 700;
+  margin-left: 20px;
+}
+.spotify p {
+  margin: 50px 0 50px 30px;
+}
+.spotify h4 {
+  margin-left: 30px;
+}
+.secttwop {
+  margin: 35px 0 0 50px;
+  font-size: large;
+}
+.acctfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  background-color: black;
+}
+.acctfootertwo {
+  padding: 40px;
+  background-color: black;
+  font-size: small;
+}
+/* accounts css ends here */
+
+/* investors css starts here */
+
+.investornav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  animation-name: bgchange;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  animation-play-state: calc(80px);
+  z-index: 5;
+  animation-duration: 2s;
+  color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.investornav img {
+  margin-left: 50px;
+  width: 96px;
+  height: 34px;
+}
+.investrightnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+.investrightnav span {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 21px;
+}
+/* INVESTOR SECTION ONE STARTS HERE */
+.investsectionone {
+  background: rgb(89, 152, 168);
+  background: linear-gradient(
+    0deg,
+    rgba(89, 152, 168, 1) 28%,
+    rgba(45, 123, 253, 1) 65%
+  );
+  height: 900px;
+}
+.sectiononeitem {
+  display: flex;
+  padding-top: 70px;
+  height: 600px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.sectiononeitem img {
+  width: 565px;
+  height: 365px;
+}
+.oneitemtwo {
+  margin-left: 110px;
+  color: white;
+  width: 40%;
+}
+.oneitemtwo h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+
+  line-height: 95px;
+  font-weight: 700;
+}
+.oneitemtwo p {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 79%;
+  margin-top: 18px;
+}
+.sectiononeitemtwo {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.sectiononeitemtwo h3 {
+  font-weight: 700;
+  color: white;
+  font-size: 25px;
+  padding: 17px 65px;
+}
+.sectiononeitemthree {
+  border-top: 1px solid white;
+  display: flex;
+}
+.sthreeone {
+  width: 400px;
+  height: 240px;
+  border-right: 1px solid white;
+  color: white;
+  text-align: left;
+}
+.sthreeone h2 {
+  font-weight: 700;
+  font-size: 48px;
+  margin: 20px 70px;
+  line-height: 50px;
+}
+.sthreeone button {
+  width: 170px;
+  height: 45px;
+  border-radius: 40px;
+  border: 1px solid white;
+  text-align: center;
+  background: none;
+
+  margin: 10px 0 10px 100px;
+}
+.sthreeone button:hover {
+  background-color: white;
+}
+/* INVESTOR SECTION TWO STARTS HERE */
+.investsectiontwo {
+  height: 1700px;
+  display: flex;
+  background: linear-gradient(
+    0deg,
+    rgba(76, 70, 250, 1) 19%,
+    rgba(179, 107, 218, 1) 50%,
+    rgba(255, 255, 255, 1) 84%
+  );
+  margin-top: 70px;
+}
+.sectiontwopart1 {
+  width: 38%;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  text-align: left;
+}
+.allitemsectiontwo {
+  width: 50%;
+  margin: 130px 0 0 50px;
+}
+.allitemsectiontwo h2 {
+  font-size: 115px;
+  line-height: 90px;
+  font-weight: 700;
+}
+.sectiontwopart1 p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 40px 0 25px;
+}
+.sectiontwopart1 span {
+  font-size: 45px;
+  margin-left: -8px;
+}
+.onlyone,
+.afor,
+.frecord {
+  font-size: 16px;
+  line-height: 21px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+.onlyone {
+  margin: 30px 0;
+}
+.frecord {
+  font-weight: 700;
+}
+.afor,
+.frecord {
+  margin: 15px 0;
+}
+.afor:hover {
+  color: blue;
+}
+.sectiontwopart2,
+.sectionthreepart2 {
+  width: 62%;
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin-top: 430px;
+}
+.userchoice,
+.userchoicetwo {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 450px;
+  box-shadow: 1px 1px 10px rgb(174, 169, 169);
+  margin: 10px 8px;
+  background-color: white;
+}
+.userchoice img {
+  margin: 17px 0 10px 16px;
+  width: 240px;
+  height: 170px;
+}
+.userchoice h3 {
+  margin-left: 16px;
+  font-size: 16px;
+  color: blue;
+}
+.userchoice h4 {
+  margin: 20px 0 0 16px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.userchoice h5 {
+  margin: 90px 0 0 16px;
+  font-size: 15px;
+  color: rgb(184, 181, 181);
+}
+/* INVESTOR SECTION THREE STARTS HERE */
+.investsectionthree {
+  display: flex;
+  height: 1300px;
+  background: linear-gradient(
+    0deg,
+    rgba(82, 170, 147, 1) 47%,
+    rgba(255, 255, 255, 1) 77%
+  );
+}
+
+.userchoicetwo {
+  width: 90%;
+  height: 100px;
+  text-align: left;
+}
+
+.userchoicetwo h5 {
+  margin-left: 25px;
+  font-size: 16px;
+  color: rgb(175, 170, 170);
+}
+.userchoicetwo h4 {
+  font-size: 20px;
+  font-weight: 700;
+
+  margin: 10px 0 20px 25px;
+}
+/* INVESTOR SECTION FOUR STARTS HERE */
+.investsectionfour {
+  display: flex;
+  height: fit-content;
+  background: linear-gradient(
+    0deg,
+    rgba(76, 70, 250, 1) 19%,
+    rgba(179, 107, 218, 1) 50%,
+    rgba(255, 255, 255, 1) 84%
+  );
+}
+.building {
+  width: 400px;
+  margin: 20px 60px 60px auto;
+}
+.building h3 {
+  line-height: 50px;
+  font-size: 50px;
+}
+.building p {
+  line-height: 27px;
+  font-size: 18px;
+  margin: 18px 0;
+}
+.vis {
+  opacity: 0;
+}
+.copycopy {
+  margin-top: 200px;
+}
+.sectionfourpart2 {
+  width: 60%;
+  margin-top: 430px;
+  height: max-content;
+}
+.original {
+  display: flex;
+}
+.two {
+  height: 300px;
+}
+.emailsection {
+  display: flex;
+  overflow-x: hidden;
+  background-color: #4c46fa;
+}
+.emailalert {
+  display: flex;
+  width: 700px;
+  height: 400px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  margin-top: 200px;
+  margin-left: 240px;
+}
+.alerts {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 540px;
+
+  text-align: left;
+}
+.alerts h5 {
+  font-size: 23px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.alerts input[type="email"] {
+  height: 45px;
+  border: 1px solid white;
+  width: 500px;
+  background: transparent;
+  padding-left: 15px;
+}
+input::placeholder {
+  color: white;
+}
+.alerts input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+  background: transparent;
+  border: 1px solid white;
+}
+.inputmail {
+  display: flex;
+  color: white;
+  margin-top: 15px;
+}
+.eachcheck {
+  margin-left: 80px;
+}
+.bsubmit {
+  width: 160px;
+  height: 45px;
+  margin-top: 50px;
+  background-color: white;
+  color: blue;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+}
+.bsubmit:hover {
+  color: white;
+  background-color: black;
+}
+.emailalertt {
+  display: flex;
+  width: 700px;
+  height: 300px;
+  border-top: 1px solid white;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 280px;
+}
+/* INVESTOR PAGE ENDS HERE */
+
+/* Jobs Starts here */
+
+/* jobs section one starts here*/
+.pinkcolour {
+  background-image: url("bgspotifyjobs.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.jobnavs {
+  position: relative;
+  z-index: 5;
+}
+.jobsin {
+  color: white;
+  margin: 150px 0 50px 100px;
+}
+.jobsin h2 {
+  font-size: 90px;
+}
+.searchinput {
+  width: 85%;
+  background-color: #ff4632;
+  border-radius: 50px;
+  border: none;
+  font-size: 30px;
+  left: 70px;
+  top: 120px;
+  text-align: left;
+  position: relative;
+  z-index: 5;
+}
+
+.allslide {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 70px;
+  width: 800px;
+  height: 670px;
+}
+
+.slideup {
+  background-color: white;
+  border-radius: 20px;
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  flex-direction: column;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+}
+.slideone {
+  animation-name: slideupone;
+  background-color: #c3f0c8;
+  right: 420px;
+  bottom: -100px;
+}
+.slidetwo {
+  animation-name: slideuptwo;
+  right: 420px;
+  background-color: #ffcdd2;
+  bottom: -400px;
+}
+.slidethree {
+  animation-name: slideupthree;
+  right: 50px;
+  bottom: -250px;
+}
+.slidefour {
+  animation-name: slideupfour;
+  right: 50px;
+  background-color: #c3f0c8;
+  bottom: -600px;
+}
+
+@keyframes slideupone {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 1300px;
+  }
+}
+@keyframes slideuptwo {
+  from {
+    bottom: -400px;
+  }
+  to {
+    bottom: 850px;
+  }
+}
+@keyframes slideupthree {
+  from {
+    bottom: -250px;
+  }
+  to {
+    bottom: 1050px;
+  }
+}
+@keyframes slideupfour {
+  from {
+    bottom: -600px;
+  }
+  to {
+    bottom: 700px;
+  }
+}
+
+/* JOB SECTION TWO STARTS HERE */
+
+.whoweareone,
+.whowearetwo,
+.whowearethree {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -webkit-transition: border-radius 0.4s !important;
+  padding-bottom: 200px;
+  transition: border-radius 0.4s !important;
+  position: sticky;
+  height: fit-content;
+  background-color: white;
+}
+.whoweareone {
+  top: 0;
+  padding-bottom: 20px;
+}
+.whowearetwo {
+  top: 70px;
+}
+.whowearethree {
+  top: 140px;
+  bottom: -750px;
+}
+.whonav {
+  height: 60px;
+  width: 100%;
+  text-align: left;
+  border-top-left-radius: 20px;
+  border-top: 1px solid rgb(209, 169, 169);
+  border-top-right-radius: 20px;
+}
+.oneband img {
+  width: 470px;
+  height: 490px;
+}
+.noso {
+  width: 650px;
+}
+.noso h3 {
+  line-height: 63.8px;
+  font-size: 58px;
+  margin-bottom: 20px;
+}
+.noso p {
+  line-height: 39px;
+  font-size: 26px;
+  word-break: break-all;
+  font-weight: 300;
+}
+/* JOB SECTION THREE STARTS HERE */
+.featuredsection {
+  height: 100vh;
+  background-color: #2d46b9;
+  overflow-x: hidden;
+  position: relative;
+}
+.featuredsection h2:first-child {
+  color: white;
+  font-size: 50px;
+  padding-top: 50px;
+  margin-bottom: 60px;
+}
+.caroeach {
+  width: 380px;
+  height: 470px;
+  border-radius: 20px;
+  background-color: #c2efc7;
+}
+
+.middleeach p {
+  margin-top: 200px;
+}
+.arwleft,
+.arwright {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 5px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 200px 50px 0 50px;
+}
+.carodiff,
+.carodif {
+  background-color: transparent;
+  border: 1px solid black;
+  color: white;
+  position: absolute;
+}
+.carodiff {
+  left: -100px;
+}
+.carodif {
+  right: -100px;
+}
+/* JOB SECTION FOUR STARTS HERE */
+.tokyosection {
+  margin-top: 50px;
+  overflow-x: hidden;
+  height: 100vh;
+}
+.sydney img,
+.tokyo img {
+  width: 120px;
+  height: 110px;
+  border-radius: 20px;
+}
+.sydney,
+.tokyo {
+  position: relative;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  margin-top: 50px;
+  animation-timing-function: linear;
+}
+.sydney {
+  animation-name: sydney;
+}
+.tokyo {
+  animation-name: tokyo;
+  direction: rtl;
+}
+.sydone button {
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.sydone {
+  margin-left: 70px;
+}
+@keyframes sydney {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 1000px;
+  }
+}
+@keyframes tokyo {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 1000px;
+  }
+}
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 1450px) {
+  /* account part */
+  .secttworight {
+    overflow-x: hidden;
+  }
+  /* index part */
+  .song {
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 1110px) {
+  /* jobs part */
+  #clear,
+  .carodiff,
+  .carodif {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* account part */
+  .rightnav,
+  .nav img {
+    margin: 10px 50px;
+  }
+  .music p {
+    display: none;
+  }
+  .righttd {
+    font-size: small;
+    padding: 0 0 0 200px;
+  }
+}
+@media screen and (max-width: 905px) {
+  /* jobs part */
+  .investrightnav span,
+  .noso,
+  .carodiff,
+  .carodif,
+  .allslide {
+    display: none;
+    visibility: hidden;
+  }
+  /* account part */
+  .secttwoleft span {
+    font-size: small;
+  }
+  .rightnav,
+  .nav img {
+    margin: 0;
+  }
+  .sectone,
+  .secttwo {
+    min-width: 100%;
+  }
+
+  /* index part */
+  .leftspan {
+    display: none;
+  }
+  .sidebar span {
+    margin: auto;
+    margin-top: 20px;
+    font-size: 80px;
+    background-color: white;
+  }
+  .sidebar img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* jobs part */
+  .searchinput,
+  .allslide,
+  .fthree,
+  .acctfootertwo,
+  .caroeach button {
+    display: none;
+  }
+  /* account part */
+  .secttwoleft span {
+    font-size: small;
+  }
+  .sectone,
+  .secttwo {
+    min-width: 100%;
+  }
+  .nav img {
+    width: 60px;
+  }
+  .rightnav span {
+    font-size: medium;
+  }
+  .secttworight {
+    min-width: 100%;
+  }
+  .righttd {
+    padding: 0 0 0 20px;
+  }
+  .dropacct,
+  .secttwoleft,
+  .sline {
+    display: none;
+  }
+  .sectone img {
+    display: none;
+  }
+
+  /* index part */
+  .see {
+    visibility: hidden;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .song {
+    width: 150px;
+  }
+  .endf a {
+    display: block;
+  }
+ 
+  .sectiononeitem img {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .allitemsectiontwo h2 {
+    font-size: 49px;
+    line-height: normal;
+  }
+  .userchoicetwo {
+    width: max-content;
+    height: fit-content;
+  }
+  .emailalert {
+    margin: 0;
+  }
+  .sectiononeitemthree,
+  .allitemsectiontwo a,
+  .allitemsectiontwo span,
+  .allitemsectiontwo p,
+  .sectiononeitemtwo,
+  .oneitemtwo,
+  .investrightnav,
+  .investsectionfour {
+    display: none;
+  }
+  .investsectionone,
+  .investsectiontwo,
+  .investsectionthree {
+    height: fit-content;
+  }
+}
+
+.indexbody {
+  position: relative;
+}
+.countdown {
+  position: absolute;
+  animation-name: countdown;
+  animation-duration: 18s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  width: 100%;
+  background-color: rgba(17, 16, 16, 0.9);
+  height: 100%;
+}
+.countdownbox img {
+  width: 90px;
+  height: 70px;
+}
+.countdownbox p {
+  font-size: 9px;
+  color: blue;
+  font-style: italic;
+}
+.countdownbox {
+  animation-name: countdownbox;
+  animation-duration: 1.5s;
+  animation-iteration-count: 15;
+  animation-timing-function: linear;
+  border: 10px solid blue;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+@keyframes countdown {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes countdownbox {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes bgchange {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: white;
+  }
+}
