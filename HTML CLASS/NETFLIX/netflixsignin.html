@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      background-image: url("nett.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .all {
+      border: 2px solid black;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.75);
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px;
+      height: 600px;
+      margin-top: 100px;
+      justify-content: center;
+    }
+    .aa {
+      display: flex;
+      /* justify-content: space-between; */
+    }
+    .ab {
+      margin-top: 15;
+      margin-left: 80px;
+      opacity: 0.4;
+    }
+    .abb {
+      margin-top: 15px;
+      opacity: 0.5;
+    }
+    h1,
+    p {
+      color: white;
+    }
+    button {
+      width: 260px;
+      height: 40px;
+      background-color: red;
+      color: white;
+    }
+    button:hover {
+      color: red;
+      background-color: black;
+    }
+    .input {
+      width: 250px;
+      height: 40px;
+      background-color: #fff;
+    }
+    .up {
+      display: block;
+      text-align: left;
+      margin-right: 160px;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    .nav button {
+      width: 80px;
+      height: 40px;
+      background-color: red;
+      color: white;
+    }
+    .nav button:hover {
+      color: black;
+      background-color: white;
+    }
+  </style>
+
+  <body>
+    <nav>
+      <div class="nav">
+        <div>
+          <a href="netflixwho.html"><button>HOME</button></a>
+        </div>
+        <div>
+          <a href="netflix.html"><button>WATCH</button></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="all">
+      <div class="up">
+        <h1>Sign In</h1>
+      </div>
+
+      <form action="">
+        <input class="input" type="text" placeholder="Email or phone number" />
+        <br /><br />
+        <input class="input" type="text" placeholder="Password" />
+        <br /><br /><br />
+        <a href=""> <button>Sign In</button></a>
+      </form>
+
+      <div class="aa">
+        <input type="checkbox" />
+        <p class="abb">Remember me</p>
+        <p class="ab">Need help?</p>
+      </div>
+    </div>
+  </body>
+</html>

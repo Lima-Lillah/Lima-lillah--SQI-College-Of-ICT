@@ -1,0 +1,52 @@
+.one {
+    height: 100vh;
+    background-image: url("nett.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .a {
+    color: red;
+    padding-left: 30px;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ss {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 300px;
+  }
+
+  .c {
+    border-radius: 10px;
+    width: 150px;
+    background-color: red;
+    height: 50px;
+    margin-right: 30px;
+    border-collapse: collapse;
+  }
+  .b {
+    text-align: center;
+    margin-top: 15%;
+    color: white;
+  }
+  h3 {
+    display: inline;
+  }
+  input {
+    height: 50px;
+    width: 450px;
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  button {
+    height: 55px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+  }
