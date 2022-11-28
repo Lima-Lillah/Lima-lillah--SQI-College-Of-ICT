@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../icofont/icofont.min.css" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+      }
+      main {
+        width: 78%;
+        height: 10000px;
+        margin: auto;
+        background-color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        padding-top: 17px;
+        margin: 0 80px;
+        font-size: 10px;
+        font-weight: 800;
+        align-items: center;
+        text-align: center;
+        font-family: sans-serif;
+      }
+
+      nav img {
+        width: 180px;
+        height: 60px;
+      }
+      .navtwo button {
+        width: 150px;
+        border-radius: 7px;
+        border: none;
+        height: 35px;
+        color: white;
+        background-color: #fa6400;
+        font-size: 14px;
+        font-family: sans-serif;
+      }
+      button span {
+        margin: 0 5px 0 10px;
+      }
+      .navtwo a {
+        text-decoration: none;
+      }
+      .navtwo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+      .navtwo a {
+        color: black;
+        margin: 0 10px;
+      }
+      .navtwo button {
+        margin-left: 10px;
+      }
+      .fixed {
+        height: 170px;
+        width: 45px;
+        border-radius: 15px;
+        background-color: white;
+        color: #fa6400;
+        position: fixed;
+        right: 10px;
+        top: 250px;
+        text-align: center;
+        font-size: 30px;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .down {
+        height: 30px;
+        border: none;
+        width: 150px;
+        border-radius: 15px;
+        background-color: #fa6400;
+        color: white;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <img src="logolandwey.png" alt="" />
+        <div class="navtwo">
+          <a href="">OUR PROJECT</a>
+          <a href=""> SCHEDULE AN INSPECTION </a>
+          <a href="">ABOUT US</a>
+          <button>
+            <span>My Landwey </span> <i class="icofont-user-alt-3"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="fixed">
+        <i class="icofont-facebook"></i>
+        <i class="icofont-twitter"></i>
+        <i class="icofont-instagram"></i>
+        <i class="icofont-youtube-play"></i>
+      </div>
+      <button class="down">
+        <i class="icofont-whatsapp"></i> <span>Quick Response</span>
+      </button>
+    </main>
+  </body>
+</html>

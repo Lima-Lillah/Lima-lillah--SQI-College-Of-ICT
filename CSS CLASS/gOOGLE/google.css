@@ -1,0 +1,156 @@
+nav {
+  margin: 20px 14px 0 0;
+
+  display: flex;
+  justify-content: right;
+}
+nav i {
+  margin-left: 20px;
+  font-size: 22px;
+}
+nav a {
+  text-decoration: none;
+  padding-left: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+}
+
+.b:hover {
+  text-decoration: underline;
+}
+.a:hover {
+  text-decoration: underline;
+}
+.icofont-navigation-menu:hover {
+  box-shadow: 0px 1px 22px;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 110px;
+  text-align: center;
+}
+.middle h1 {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 100;
+}
+.h1 {
+  margin-bottom: 50px;
+}
+
+.g {
+  color: #4285f4;
+}
+.o {
+  color: #ea4335;
+}
+.l {
+  color: #34a853;
+}
+.oo {
+  color: #fbbc05;
+}
+
+.search {
+  border: 4px solid white;
+  box-shadow: 0 0 3px gray;
+  width: fit-content;
+  border-radius: 100px;
+}
+input {
+  outline: none;
+  border: none;
+  width: 550px;
+  height: 35px;
+  font-size: 16px;
+}
+.icofont-mic {
+  margin-right: 15px;
+  color: #4285f4;
+}
+.icofont-search {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #ea4335;
+}
+.dropdown {
+  display: none;
+}
+
+.search:focus-within .dropdown {
+  display: block;
+}
+
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.plus img {
+  width: 35px;
+  border-radius: 100%;
+}
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 45px;
+  font-size: 33px;
+  border-radius: 100%;
+  margin: 0 22px;
+  background-color: #e9ebec;
+}
+.cont {
+  margin: 3px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.cont:hover {
+  background-color: #e8e8e9;
+}
+.contplus:hover {
+  background-color: #e8e8e9;
+}
+.contplus {
+  margin: 3px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.one {
+  margin: 10px;
+  display: flex;
+}
+.cont i {
+  display: flex;
+  height: 1px;
+  justify-content: right;
+  margin: 10px 15px 0 0;
+  opacity: 0;
+  transition: 1s;
+}
+.cont:hover i {
+  opacity: 1;
+}
+.contplus i {
+  display: flex;
+  height: 1px;
+  justify-content: right;
+  margin: 10px 15px 0 0;
+  opacity: 0;
+}

@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color:#000000;
+    color: white;
+}
+
+
+.one {
+    height: 100%;
+    background-image: url("nett.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    border-bottom: 8px solid #222;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .two{
+    display: flex;
+  padding: 50px 250px 50px 250px;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 8px solid #222;
+  
+  }
+  .button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+  }
+  button a{
+    text-decoration: none;
+  }
+
+  img{
+    height: 100%;
+    width: 100%;
+  }
+  .a {
+    color: red;
+    padding-left: 30px;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  .ss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 150px;
+  }
+
+  .c {
+    border-radius: 10px;
+    width: 150px;
+    background-color: red;
+    height: 50px;
+    margin-right: 30px;
+    color: white;
+    font-size: larger;
+    border-collapse: collapse;
+  }
+  .b {
+    text-align: center;
+    margin-top: 15%;
+    color: white;
+  }
+  h1{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h2 {
+ font-size:
+29px;
+  }
+  h4{
+    font-size: 1.625rem;
+    font-weight: 400;
+  }
+  .two h1{
+    font-size: 40px;
+    font-weight:700;
+    margin-top: 60px;
+
+  }
+  input {
+    height: 65px;
+    padding-left: 20px;
+    width: 400px;
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  .dw button {
+   display: flex;
+   flex-direction: column;
+  max-width: fit-content;
+   justify-content: center;
+   align-items: center;
+   background-color: #303030;
+  
+   color: white;
+   text-align: left;
+   padding: 20px;
+   font-size: 25px;
+   
+   
+  }
+  .downbutton{
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+    
+    width: 800px;
+   
+border-radius: 0;
+
+  }
+ 
+  .plus{
+    font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+    color: white;
+    
+  }
+  p{
+    display: none;
+  }
+  button:focus-within p{
+    display: block;
+  }
+  
+  .down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    padding-bottom: 20px;
+    margin: auto;
+   
+  }
+form{
+  display: flex;
+}
+form button{
+  height: 69px;
+  margin-left: -8px;
+  margin-top: 1px;
+  width: 250px;
+font-size: 25px;
+  text-align: center;
+  border: none;
+ 
+}
